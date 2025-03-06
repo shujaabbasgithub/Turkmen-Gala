@@ -2,12 +2,12 @@ import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Home from "../pages/Home";
+const NotFound = lazy(() => import("../pages/NotFound"));
 const EnergySector = lazy(() => import("../pages/EnergySector"));
 const InfraSector = lazy(() => import("../pages/InfraSector"));
 const WhoWeAre = lazy(() => import("../pages/WhoWeAre"));
 const BusinessWithUs = lazy(() => import("../pages/BusinessWithUs"));
 const WorkWithUs = lazy(() => import("../pages/WorkWithUs"));
-const NotFound = lazy(() => import("../pages/NotFound"));
 // 
 import SectorDetails from "../pages/sectors/SectorDetails"
 import SectorItems from "../pages/sectors/SectorItems";

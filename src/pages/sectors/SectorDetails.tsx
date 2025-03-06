@@ -1,15 +1,16 @@
 import React, { JSX, lazy } from 'react';
 import { useParams } from "react-router-dom";
 import { IMAGES } from '../../utils/staticJSON';
+
+import BlastSprayNdtEquipments from './details/products-procurement/BlastSprayNdtEquipments';
 import Filtration from './details/products-procurement/Filtration';
+import FlowControlSolutions from './details/products-procurement/FlowControlSolutions';
+import HydraulicPneumaticTools from './details/products-procurement/HydraulicPneumaticTools';
+import PremiumQualityIndustrialTools from './details/products-procurement/PremiumQualityIndustrialTools';
 import SealingSolutions from './details/products-procurement/SealingSolutions';
 import StackEmissionsMonitors from './details/products-procurement/StackEmissionsMonitors';
-import PremiumQualityIndustrialTools from './details/products-procurement/PremiumQualityIndustrialTools';
-import HydraulicPneumaticTools from './details/products-procurement/HydraulicPneumaticTools';
-import FlowControlSolutions from './details/products-procurement/FlowControlSolutions';
-import BlastSprayNdtEquipments from './details/products-procurement/BlastSprayNdtEquipments';
+const NotFound = React.lazy(() => import('../NotFound'));
 
-const NotFound = lazy(() => import("../NotFound"));
 const EngineeredTouchpointAccess = lazy(() => import("./details/ae-mi/EngineeredTouchpointAccess"));
 const HeatSolutions = lazy(() => import('./details/ae-mi/HeatSolutions'));
 const IntrusiveNonInrusive = lazy(() => import('./details/ae-mi/IntrusiveNonInrusive'));

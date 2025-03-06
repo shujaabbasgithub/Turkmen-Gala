@@ -1,7 +1,7 @@
 import React, { JSX } from 'react';
 import { useParams } from "react-router-dom";
 import { IMAGES } from '../../utils/staticJSON';
-import NotFound from '../NotFound';
+
 import AeMi from './items/AeMi';
 import AutomationMeasuring from './items/AutomationMeasuring';
 import EfccMaintenance from './items/EfccMaintenance';
@@ -10,6 +10,7 @@ import Inspection from './items/Inspection';
 import ProductsProcurement from './items/ProductsProcurement';
 import TopsideUnderwater from './items/TopsideUnderwater';
 import Upstream from './items/Upstream';
+const NotFound = React.lazy(() => import('../NotFound'));
 
 const SectorItems: React.FC = () => {
 
